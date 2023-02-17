@@ -1,5 +1,5 @@
 #!/bin/bash
-# Build script for engine
+# Build script for library
 set echo on
 
 mkdir -p ../bin
@@ -9,7 +9,7 @@ cFilenames=$(find . -type f -name "*.c")
 
 # echo "Files:" $cFilenames
 
-assembly="engine"
+assembly="library"
 compilerFlags="-g -shared -fdeclspec -fPIC"
 # -fms-extensions 
 # -Wall -Werror
