@@ -1,3 +1,5 @@
 {
-	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"workbench.colorTheme": "Visual Studio Dark - C++",
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
+	// "terminal.integrated.defaultProfile.windows": "Command Prompt"
 }
