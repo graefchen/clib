@@ -1,4 +1,17 @@
 {
-	"recommendations": ["ms-vscode.cpptools", "ms-vscode.cpptools-themes", "ms-vscode.powershell", "usernamehw.errorlens", "mhutchie.git-graph", "teabyii.ayu", "ykray.lightbulb", "mads-hartmann.bash-ide-vscode", "bierner.github-markdown-preview"],
-	"unwantedRecommendations": ["llvm-vs-code-extensions.vscode-clangd", "vadimcn.vscode-lldb"]
+	"recommendations": [
+		"ms-vscode.cpptools",
+		"ms-vscode.cpptools-themes",
+		"ms-vscode.powershell",
+		"usernamehw.errorlens",
+		"mhutchie.git-graph",
+		"teabyii.ayu",
+		"ykray.lightbulb",
+		"mads-hartmann.bash-ide-vscode",
+		"bierner.github-markdown-preview"
+	],
+	"unwantedRecommendations": [
+		"llvm-vs-code-extensions.vscode-clangd",
+		"vadimcn.vscode-lldb"
+	]
 }
