@@ -10,7 +10,8 @@ cFilenames=$(find . -type f -name "*.c")
 # echo "Files:" $cFilenames
 
 assembly="test"
-compilerFlags="-g -fdeclspec -fPIC" 
+compilerFlags="-g -fdeclspec -fPIC"
+optimiseFlag="-O3"
 # -fms-extensions 
 # -Wall -Werror
 includeFlags="-Isrc -I../lib/src/"
@@ -18,5 +19,5 @@ linkerFlags="-L../bin/ -llibrary -Wl,-rpath,."
 defines="-D_DEBUG -DIMPORT"
 
 echo "Building $assembly..."
-echo clang $cFilenames $compilerFlags -o ../bin/$assembly $defines $includeFlags $linkerFlags
-clang $cFilenames $compilerFlags -o ../bin/$assembly $defines $includeFlags $linkerFlags
+echo clang $cFilenames $compilerFlags $optimiseFlag -o ../bin/$assembly $defines $includeFlags $linkerFlags
+clang $cFilenames $compilerFlags $optimiseFlag -o ../bin/$assembly $defines $includeFlags $linkerFlags

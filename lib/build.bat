@@ -12,8 +12,9 @@ REM echo "Files: %cFilenames%"
 
 SET assembly=library
 SET compilerFlags=-g -shared -Wvarargs -Wall -Werror
+SET optimiseFlag="-O3"
 REM -Wall -Werror
 SET defines=-D_DEBUG -DEXPORT -D_CRT_SECURE_NO_WARNING
 
 ECHO "Building %assembly%%..."
-clang %cFilenames% %compilerFlags% -o ../bin/%assembly%.dll %defines%
+clang %cFilenames% %compilerFlags% %optimiseFlag%  -o ../bin/%assembly%.dll %defines%

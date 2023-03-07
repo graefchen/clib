@@ -11,9 +11,10 @@ cFilenames=$(find . -type f -name "*.c")
 
 assembly="library"
 compilerFlags="-g -shared -fdeclspec -fPIC"
+optimiseFlag="-O3"
 # -fms-extensions 
 # -Wall -Werror
 defines="-D_DEBUG -DEXPORT"
 
 echo "Building $assembly..."
-clang $cFilenames $compilerFlags -o ../bin/lib$assembly.so $defines
+clang $cFilenames $compilerFlags $optimiseFlag -o ../bin/lib$assembly.so $defines
