@@ -1,5 +1,7 @@
 # clib
 
+I use this repositiory as an template for some C projects.
+
 basic vscode project to create a c library with **clang**
 
 With lib, bin and test folder and some helper scripts.
